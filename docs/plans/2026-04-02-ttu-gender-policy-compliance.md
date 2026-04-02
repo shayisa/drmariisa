@@ -95,3 +95,32 @@ The TTU policy explicitly states:
 4. Prior state law (SB 17) **exempted academic research and creative work**
 
 This personal website showcasing published peer-reviewed research is therefore exempt. The changes above are **professional caution**, not legal compliance.
+
+---
+
+## Already Completed Corrections (April 2, 2026)
+
+The following corrections were made in this session because they were independently needed (ungrounded content), and they also align with the Option B approach:
+
+### Homepage Tagline (DONE)
+- **Old:** "Bridging rigorous bone biomechanics with profound social justice in forensic anthropology."
+- **New:** "Advancing forensic anthropology through experimental skeletal research, inclusive identification, and medicolegal casework."
+- **Why:** Old tagline was not grounded in any source and used "social justice" framing. New tagline derived from TTU profile + ARID Lab mission.
+
+### 4 Ungrounded Quotes Replaced (DONE)
+All 4 made-up quotes replaced with real, published, citable quotes:
+
+| Page | Old (made up) | New (grounded) | Source |
+|------|--------------|----------------|--------|
+| index.html | "Science is never neutral..." | "We are responsible for the ethical treatment of the dead..." | *American Anthropologist* (2022) |
+| research.html | "Bone does not lie; it only waits for us to learn its language." | "...fractography can be used to enhance the anthropologist's understanding of trauma events..." | FBI Fractography Guide (2022) |
+| teaching.html | "Education is the most powerful tool for restorative justice." | "It is not always enough to simply apply methods and write a report..." | *American Anthropologist* (2022) |
+| arid-lab.html | "Research in the ARID Lab is not just about bones..." | "Forensic skeletal trauma analysis has experienced a recent shift..." | FBI Fractography Guide (2022) |
+
+### Teaching Page Hero Image (PENDING — needs photo from Shay)
+- Current: Google-hosted placeholder showing person who is NOT Dr. Isa
+- Action: Replace with neutral image of young forensic scientists
+- Status: Waiting for image file
+
+### Remaining TTU Policy Changes (20 edits — NOT YET DONE)
+The gender-related language softening described in the main plan above has NOT been implemented yet. Those ~20 edits across 4 files are saved for a dedicated session.
