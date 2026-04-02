@@ -93,12 +93,26 @@
 <a class="font-['Noto_Serif'] text-sm tracking-wide text-zinc-500 hover:text-[#361c36] transition-colors" href="teaching.html">Teaching</a>
 <a class="font-['Noto_Serif'] text-sm tracking-wide text-zinc-500 hover:text-[#361c36] transition-colors" href="service-impact.html">Service &amp; Impact</a>
 </div>
-<div class="flex gap-4">
+<div class="hidden md:flex gap-4">
 <a href="mailto:mari.isa@ttu.edu" class="font-['Noto_Serif'] text-sm tracking-wide bg-primary text-on-primary px-5 py-2 rounded-md hover:scale-95 duration-200 ease-out">Contact</a>
 <a href="https://scholar.google.com/citations?user=fw-qsXcAAAAJ&amp;hl=en" target="_blank" class="font-['Noto_Serif'] text-sm tracking-wide border border-outline text-primary px-5 py-2 rounded-md hover:bg-surface-container-low transition-all">Google Scholar</a>
 </div>
+<button id="menu-toggle" class="md:hidden text-primary"><span class="material-symbols-outlined text-2xl">menu</span></button>
 </div>
 </nav>
+<div id="mobile-menu" class="hidden md:hidden bg-[#f9f9f8]/95 backdrop-blur-xl border-b border-outline-variant/20 px-8 py-6 sticky top-[88px] z-40">
+<div class="flex flex-col gap-4 font-['Noto_Serif'] text-sm tracking-wide">
+<a class="text-zinc-500 hover:text-[#361c36] py-2" href="index.html">Home</a>
+<a class="text-[#361c36] font-semibold py-2" href="arid-lab.html">ARID Lab</a>
+<a class="text-zinc-500 hover:text-[#361c36] py-2" href="research.html">Research</a>
+<a class="text-zinc-500 hover:text-[#361c36] py-2" href="teaching.html">Teaching</a>
+<a class="text-zinc-500 hover:text-[#361c36] py-2" href="service-impact.html">Service &amp; Impact</a>
+<div class="flex flex-col gap-3 pt-4 border-t border-outline-variant/20">
+<a href="mailto:mari.isa@ttu.edu" class="bg-primary text-on-primary px-5 py-2.5 rounded-md text-xs font-medium text-center">Contact</a>
+<a href="https://scholar.google.com/citations?user=fw-qsXcAAAAJ&amp;hl=en" target="_blank" class="border border-outline text-primary px-5 py-2.5 rounded-md text-xs font-medium text-center">Google Scholar</a>
+</div>
+</div>
+</div>
 <main>
 <!-- Hero & Mission -->
 <section class="relative pt-24 pb-20 px-8 max-w-7xl mx-auto">
@@ -330,4 +344,12 @@
 <a class="text-[#361c36] opacity-60 hover:opacity-100 transition-opacity" href="https://www.researchgate.net/profile/Mariyam-Isa" target="_blank"><span class="material-symbols-outlined">account_circle</span></a>
 </div>
 </footer>
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  var menu = document.getElementById('mobile-menu');
+  var icon = this.querySelector('.material-symbols-outlined');
+  menu.classList.toggle('hidden');
+  icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+});
+</script>
 </body></html>
