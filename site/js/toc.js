@@ -77,13 +77,13 @@
       right: 24px;
       top: 50%;
       transform: translateY(-50%);
-      width: 200px;
+      width: 210px;
       max-height: 75vh;
       overflow-y: auto;
-      background: rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(208, 195, 203, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      border: 1px solid rgba(208, 195, 203, 0.06);
       border-radius: 12px;
       padding: 16px;
       z-index: 40;
@@ -126,7 +126,7 @@
       align-items: center;
       gap: 5px;
       padding: 4px 0 4px 6px;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 600;
       color: #361c36;
       text-decoration: none;
@@ -145,7 +145,7 @@
     .toc-section {
       display: block;
       padding: 3px 0 3px 18px;
-      font-size: 10px;
+      font-size: 12px;
       color: #4d444b;
       text-decoration: none;
       cursor: pointer;
@@ -187,29 +187,33 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      width: 24px;
-      background: rgba(255, 255, 255, 0.25);
+      width: 28px;
+      background: rgba(54, 28, 54, 0.12);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
-      border: 1px solid rgba(208, 195, 203, 0.08);
+      border: 1px solid rgba(54, 28, 54, 0.15);
+      border-right: none;
       border-radius: 8px 0 0 8px;
-      padding: 12px 4px;
+      padding: 14px 5px;
       cursor: pointer;
       z-index: 40;
-      transition: opacity 0.3s ease, background 0.2s;
+      transition: opacity 0.3s ease, background 0.2s, width 0.2s;
       writing-mode: vertical-rl;
       text-orientation: mixed;
       font-family: 'Manrope', sans-serif;
-      font-size: 10px;
-      color: #4d444b;
-      letter-spacing: 0.05em;
+      font-size: 11px;
+      font-weight: 600;
+      color: #361c36;
+      letter-spacing: 0.08em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       max-height: 200px;
+      box-shadow: -2px 0 8px rgba(54, 28, 54, 0.08);
     }
     #toc-minimized:hover {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(54, 28, 54, 0.18);
+      width: 32px;
       color: #361c36;
     }
 
