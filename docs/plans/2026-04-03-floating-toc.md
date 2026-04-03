@@ -672,9 +672,43 @@ If a page has fewer than 3 h2 sections (only privacy.html has 6, but future-proo
 
 ---
 
-## Task 7: Final Commit & Push
+## Task 7: Dev Server Review — User Approval Gate
 
-**Step 1: Review all changes** — confirm only the following files were modified:
+**This is a MANDATORY gate. Do NOT push to GitHub until the user has reviewed and approved the TOC on the dev server.**
+
+**Step 1: Start a local dev server** to serve the site files:
+
+```bash
+cd /Users/shayisa/Vibecode-projects/maris-website/site
+python3 -m http.server 8080
+```
+
+**Step 2: Present the dev server URL to the user:**
+Tell the user: "The site is running at http://localhost:8080 — please review the TOC on these pages and let me know if anything needs adjusting:
+- http://localhost:8080/index.html
+- http://localhost:8080/research.html
+- http://localhost:8080/teaching.html
+- http://localhost:8080/service-impact.html
+- http://localhost:8080/arid-lab.html
+- http://localhost:8080/privacy.html"
+
+**Step 3: Wait for user feedback.** The user may request:
+- Visual adjustments (size, position, transparency, colors)
+- Content changes (which sections appear, label text)
+- Behavior changes (animation speed, auto-expand rules)
+- Mobile-specific tweaks
+
+**Step 4: Iterate on feedback.** Apply any requested changes, re-test on the dev server, and ask for approval again. Repeat until the user confirms.
+
+**Step 5: User confirms approval.** Only proceed to Task 8 after explicit "looks good" or equivalent confirmation.
+
+---
+
+## Task 8: Final Push to GitHub
+
+**Step 1: Stop the dev server** (Ctrl+C on the python process).
+
+**Step 2: Review all changes** — confirm only the following files were modified:
 - Created: `site/js/toc.js`
 - Modified: `site/index.html` (IDs + script tag)
 - Modified: `site/research.html` (IDs + script tag)
@@ -683,13 +717,13 @@ If a page has fewer than 3 h2 sections (only privacy.html has 6, but future-proo
 - Modified: `site/arid-lab.html` (IDs + script tag)
 - Modified: `site/privacy.html` (IDs + script tag + data-no-hero)
 
-**Step 2: Push to GitHub**
+**Step 3: Push to GitHub**
 
 ```bash
 git push
 ```
 
-**Step 3: Verify live site** at https://shayisa.github.io/drmariisa/
+**Step 4: Verify live site** at https://shayisa.github.io/drmariisa/
 
 ---
 
@@ -703,6 +737,7 @@ git push
 | 4 | Add script tag to all 6 pages | All 6 HTML files |
 | 5 | Visual testing & polish | Adjust toc.js as needed |
 | 6 | Accessibility & edge cases | Adjust toc.js |
-| 7 | Final push | Git push |
+| 7 | **Dev server review — USER APPROVAL GATE** | User reviews locally |
+| 8 | Final push | Git push |
 
 **Rollback:** Delete `site/js/toc.js`, remove 6 script tags. IDs can stay (harmless). One commit to revert.
