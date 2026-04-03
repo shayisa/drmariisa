@@ -507,22 +507,33 @@
     }
   }
 
-  // --- Scroll Spy ---
+  // --- Scroll Spy (scroll-based for reliability) ---
   function setupScrollSpy() {
-    var allTargets = document.querySelectorAll('h2[id], h3[data-toc="true"]');
+    var allTargets = Array.from(document.querySelectorAll('h2[id], h3[data-toc="true"]'));
     if (!allTargets.length) return;
 
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, {
-      rootMargin: '-20% 0px -70% 0px'
-    });
+    var headerOffset = 100;
+    var ticking = false;
 
-    allTargets.forEach(function (el) { observer.observe(el); });
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var scrollPos = window.scrollY + headerOffset;
+        var active = null;
+        for (var i = allTargets.length - 1; i >= 0; i--) {
+          if (allTargets[i].offsetTop <= scrollPos) {
+            active = allTargets[i].id;
+            break;
+          }
+        }
+        if (active) setActiveSection(active);
+        ticking = false;
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // initial check
   }
 
   // --- Hero Detection ---
