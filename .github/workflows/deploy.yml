@@ -30,8 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Generate basePath for GitHub Pages
+        run: node -e "require('fs').writeFileSync('src/lib/basePath.ts','export const BASE_PATH = \"/drmariisa\";\nexport function asset(path: string): string { return \`\${BASE_PATH}\${path}\`; }\n');console.log('Generated basePath.ts');console.log(require('fs').readFileSync('src/lib/basePath.ts','utf8'))"
+
       - name: Build static site
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: "/drmariisa"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
