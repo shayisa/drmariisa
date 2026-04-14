@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { asset } from "@/lib/basePath";
 
 export const metadata = {
   title: "ARID Lab | Dr. Mariyam Isa",
@@ -16,7 +17,7 @@ export default function AridLabPage() {
         {/* Hero background */}
         <div className="absolute inset-0">
           <img
-            src="/images/lab-skeletal-models.jpg"
+            src={asset("/images/lab-skeletal-models.jpg")}
             alt="Modern laboratory setting with skeletal models and bright morning light"
             className="w-full h-full object-cover opacity-10"
           />
@@ -224,7 +225,7 @@ export default function AridLabPage() {
             {/* Large — students working */}
             <div className="col-span-2 row-span-2 rounded-xl overflow-hidden">
               <img
-                src="/images/cave-excavation-site.jpg"
+                src={asset("/images/cave-excavation-site.jpg")}
                 alt="Students working together in a sunlit academic hall"
                 className="w-full h-full object-cover"
               />
@@ -232,7 +233,7 @@ export default function AridLabPage() {
             {/* Archaeological fieldwork */}
             <div className="col-span-2 rounded-xl overflow-hidden">
               <img
-                src="/images/archaeologist-fieldwork.jpg"
+                src={asset("/images/archaeologist-fieldwork.jpg")}
                 alt="Close up of archaeologist carefully using a brush on a fossilized specimen in the field"
                 className="w-full h-full object-cover"
               />
@@ -240,7 +241,7 @@ export default function AridLabPage() {
             {/* Bone microscopy */}
             <div className="rounded-xl overflow-hidden">
               <img
-                src="/images/bone-tissue-microscopy.jpg"
+                src={asset("/images/bone-tissue-microscopy.jpg")}
                 alt="Microscopic view of bone tissue with high contrast artistic lighting"
                 className="w-full h-full object-cover"
               />
@@ -248,7 +249,7 @@ export default function AridLabPage() {
             {/* Lab equipment */}
             <div className="rounded-xl overflow-hidden">
               <img
-                src="/images/lab-equipment-digital.jpg"
+                src={asset("/images/lab-equipment-digital.jpg")}
                 alt="Lab equipment and digital displays in a modern forensics facility"
                 className="w-full h-full object-cover"
               />
@@ -279,7 +280,7 @@ export default function AridLabPage() {
             <div className="bg-surface-container-low rounded-xl overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/images/faculty-houk.jpg"
+                  src={asset("/images/faculty-houk.jpg")}
                   alt="Dr. Brett A. Houk"
                   className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
@@ -298,7 +299,7 @@ export default function AridLabPage() {
             <div className="bg-surface-container-low rounded-xl overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/images/faculty-durband.jpg"
+                  src={asset("/images/faculty-durband.jpg")}
                   alt="Dr. Arthur Durband"
                   className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
@@ -317,7 +318,7 @@ export default function AridLabPage() {
             <div className="bg-surface-container-low rounded-xl overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/images/faculty-novotny.jpg"
+                  src={asset("/images/faculty-novotny.jpg")}
                   alt="Dr. Anna Novotny"
                   className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
@@ -336,7 +337,7 @@ export default function AridLabPage() {
             <div className="bg-surface-container-low rounded-xl overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/images/faculty-fontana.jpg"
+                  src={asset("/images/faculty-fontana.jpg")}
                   alt="Dr. Giacomo Fontana"
                   className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
@@ -368,7 +369,7 @@ export default function AridLabPage() {
             <div className="bg-surface-container-lowest rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.04)] overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/images/edwards-isa-2024.jpg"
+                  src={asset("/images/edwards-isa-2024.jpg")}
                   alt="Journal of Forensic Sciences publication: Effects of kinetic energy and firearm-to-target distance on fracture behavior in flat bones by Edwards and Isa, 2024"
                   className="w-full h-full object-cover object-top"
                 />
@@ -403,7 +404,7 @@ export default function AridLabPage() {
             <div className="bg-surface-container-lowest rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.04)] overflow-hidden">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="/images/cosage-2025.jpg"
+                  src={asset("/images/cosage-2025.jpg")}
                   alt="American Journal of Biological Anthropology publication: Introducing COSAGE by Blatt, Isa, et al., 2025"
                   className="w-full h-full object-cover object-top"
                 />

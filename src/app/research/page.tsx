@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { asset } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Research | Dr. Mariyam Isa",
@@ -16,7 +17,7 @@ export default function ResearchPage() {
         {/* Hero background image */}
         <div className="absolute inset-0">
           <img
-            src="/images/researchers-forensic-lab.jpg"
+            src={asset("/images/researchers-forensic-lab.jpg")}
             alt="Researchers working with forensic identification tools in a lab"
             className="w-full h-full object-cover opacity-10"
           />
@@ -84,7 +85,7 @@ export default function ResearchPage() {
             <div className="bg-surface-container-lowest rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.04)] overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="/images/bone-fragment-fracture.jpg"
+                  src={asset("/images/bone-fragment-fracture.jpg")}
                   alt="Close-up of a human bone fragment with a clean fracture line under laboratory lighting"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
@@ -109,7 +110,7 @@ export default function ResearchPage() {
             <div className="bg-primary text-on-primary rounded-xl overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="/images/diverse-identities-abstract.jpg"
+                  src={asset("/images/diverse-identities-abstract.jpg")}
                   alt="Abstract representation of diverse identities using layered translucent glass panels"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -135,7 +136,7 @@ export default function ResearchPage() {
             <div className="bg-surface-container-lowest rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.04)] overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="/images/cave-excavation-site.jpg"
+                  src={asset("/images/cave-excavation-site.jpg")}
                   alt="Historical photograph of cave excavation site with geological cross-section"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
@@ -268,7 +269,7 @@ export default function ResearchPage() {
             <div className="space-y-8">
               <div className="rounded-xl overflow-hidden h-64">
                 <img
-                  src="/images/bone-fracture-macro.jpg"
+                  src={asset("/images/bone-fracture-macro.jpg")}
                   alt="Macro photography of cranial bone fracture patterns showing arrest lines under forensic lighting"
                   className="w-full h-full object-cover rounded-xl"
                 />
@@ -300,28 +301,28 @@ export default function ResearchPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="rounded-lg overflow-hidden h-48">
               <img
-                src="/images/microscope-slide-tissue.jpg"
+                src={asset("/images/microscope-slide-tissue.jpg")}
                 alt="Macro photography of a microscope slide showing thin sections of mineralized tissue"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="rounded-lg overflow-hidden h-48 md:translate-y-8">
               <img
-                src="/images/skeletal-impact-simulation.jpg"
+                src={asset("/images/skeletal-impact-simulation.jpg")}
                 alt="Data visualization of force distribution vectors in a skeletal impact simulation"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="rounded-lg overflow-hidden h-48">
               <img
-                src="/images/antique-books-pipettes.jpg"
+                src={asset("/images/antique-books-pipettes.jpg")}
                 alt="Stacks of antique leather-bound books next to modern laboratory pipettes"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="rounded-lg overflow-hidden h-48 md:translate-y-8">
               <img
-                src="/images/forensic-camera-equipment.jpg"
+                src={asset("/images/forensic-camera-equipment.jpg")}
                 alt="Detail of camera equipment and lenses on a laboratory desk for forensic photography"
                 className="w-full h-full object-cover rounded-lg"
               />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { asset } from "@/lib/basePath";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-72 h-96 md:w-80 md:h-[28rem] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/mari-isa-portrait.jpg"
+                  src={asset("/images/mari-isa-portrait.jpg")}
                   alt="Professional portrait of Dr. Mari Isa"
                   className="w-full h-full object-cover"
                 />
@@ -338,7 +339,7 @@ export default function Home() {
         {/* Background atmospheric image */}
         <div className="absolute inset-0">
           <img
-            src="/images/forensic-lab-equipment-blue.jpg"
+            src={asset("/images/forensic-lab-equipment-blue.jpg")}
             alt="Forensic laboratory equipment with atmospheric lighting"
             className="w-full h-full object-cover opacity-15"
           />
@@ -380,7 +381,7 @@ export default function Home() {
             <div className="bg-surface-container-low rounded-xl overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="/images/bone-fracture-macro.jpg"
+                  src={asset("/images/bone-fracture-macro.jpg")}
                   alt="Macro photography of cranial bone fracture patterns under forensic lighting"
                   className="w-full h-full object-cover"
                 />
@@ -410,7 +411,7 @@ export default function Home() {
             <div className="bg-surface-container-low rounded-xl overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="/images/diverse-identities-abstract.jpg"
+                  src={asset("/images/diverse-identities-abstract.jpg")}
                   alt="Modern abstract representation of diverse identities using layered translucent glass panels"
                   className="w-full h-full object-cover"
                 />

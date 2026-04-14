@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { asset } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Service & Impact | Dr. Mariyam Isa",
@@ -221,7 +222,7 @@ export default function ServiceImpactPage() {
         {/* Hero background */}
         <div className="absolute inset-0">
           <img
-            src="/images/archaeologist-fieldwork.jpg"
+            src={asset("/images/archaeologist-fieldwork.jpg")}
             alt="Archaeologist carefully working on a specimen in the field"
             className="w-full h-full object-cover opacity-10"
           />
@@ -297,7 +298,7 @@ export default function ServiceImpactPage() {
             </h2>
             <div className="rounded-xl overflow-hidden h-64">
               <img
-                src="/images/researchers-working-together.jpg"
+                src={asset("/images/researchers-working-together.jpg")}
                 alt="Researchers working together in a high-tech lab setting"
                 className="w-full h-[150%] object-cover object-[center_25%] rounded-xl"
               />
@@ -460,14 +461,14 @@ export default function ServiceImpactPage() {
           <div className="grid grid-cols-2 gap-4 mb-16">
             <div className="rounded-xl overflow-hidden h-48 md:h-64">
               <img
-                src="/images/archaeologist-fieldwork.jpg"
+                src={asset("/images/archaeologist-fieldwork.jpg")}
                 alt="Archaeologist carefully using a brush on a fossilized specimen in the field"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-xl overflow-hidden h-48 md:h-64">
               <img
-                src="/images/cave-excavation-site.jpg"
+                src={asset("/images/cave-excavation-site.jpg")}
                 alt="Archaeological excavation site with geological cross-section and markers"
                 className="w-full h-full object-cover"
               />

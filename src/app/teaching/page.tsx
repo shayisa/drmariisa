@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { asset } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Teaching | Dr. Mariyam Isa",
@@ -84,7 +85,7 @@ export default function TeachingPage() {
         {/* Hero background */}
         <div className="absolute inset-0">
           <img
-            src="/images/lab-equipment-anatomical.jpg"
+            src={asset("/images/lab-equipment-anatomical.jpg")}
             alt="Scientific laboratory setting with equipment and anatomical models"
             className="w-full h-full object-cover opacity-10"
           />
@@ -219,21 +220,21 @@ export default function TeachingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="rounded-xl overflow-hidden h-48 group">
               <img
-                src="/images/lab-equipment-anatomical.jpg"
+                src={asset("/images/lab-equipment-anatomical.jpg")}
                 alt="Scientific laboratory with equipment and anatomical models"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-xl overflow-hidden h-48 group">
               <img
-                src="/images/notebook-biological-sketches.jpg"
+                src={asset("/images/notebook-biological-sketches.jpg")}
                 alt="Open notebook with technical sketches of biological structures in a scholarly desk setting"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-xl overflow-hidden h-48 group">
               <img
-                src="/images/magnifying-glass-documents.jpg"
+                src={asset("/images/magnifying-glass-documents.jpg")}
                 alt="Magnifying glass over documents with maps and historical notes"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -261,7 +262,7 @@ export default function TeachingPage() {
           {/* Group photo */}
           <div className="mb-16 rounded-xl overflow-hidden h-64 md:h-80">
             <img
-              src="/images/forensic-students.png"
+              src={asset("/images/forensic-students.png")}
               alt="Graduate students collaborating in a forensic anthropology lab"
               className="w-full h-full object-cover rounded-xl"
             />
@@ -451,7 +452,7 @@ export default function TeachingPage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src="/images/researchers-working-together.jpg"
+            src={asset("/images/researchers-working-together.jpg")}
             alt="Researchers working together in a high-tech lab setting"
             className="w-full h-full object-cover opacity-10"
           />
