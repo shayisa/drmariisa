@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node -e \"const bp=process.env.NEXT_PUBLIC_BASE_PATH||'';const fs=require('fs');fs.writeFileSync('src/lib/basePath.ts','// Generated at build time. Do not edit manually.\\nexport const BASE_PATH = \\\"'+bp+'\\\";\\nexport function asset(path: string): string { return \\`\\${BASE_PATH}\\${path}\\`; }\\n');console.log('basePath.ts generated with BASE_PATH=\\\"'+bp+'\\\"')\"",
     "build": "next build",
     "start": "next start"
   },
