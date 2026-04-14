@@ -31,7 +31,11 @@ jobs:
         run: npm ci
 
       - name: Generate basePath for GitHub Pages
-        run: node -e "require('fs').writeFileSync('src/lib/basePath.ts','export const BASE_PATH = \"/drmariisa\";\nexport function asset(path: string): string { return \`\${BASE_PATH}\${path}\`; }\n');console.log('Generated basePath.ts');console.log(require('fs').readFileSync('src/lib/basePath.ts','utf8'))"
+        run: |
+          echo 'export const BASE_PATH = "/drmariisa";' > src/lib/basePath.ts
+          echo 'export function asset(path: string): string { return BASE_PATH + path; }' >> src/lib/basePath.ts
+          echo "Generated basePath.ts:"
+          cat src/lib/basePath.ts
 
       - name: Build static site
         run: npm run build
